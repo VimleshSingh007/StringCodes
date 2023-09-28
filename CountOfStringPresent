@@ -1,0 +1,23 @@
+import java.util.*;
+public class count_string_userinput {
+    public static void main(String[] args) {
+        String s=new String("hello samar where are you from who is this hello");
+        int count=0;
+        Scanner sc =new Scanner(System.in);
+        System.out.println("enter string what do you want to present in string");
+        String found=sc.next();
+        
+        String[] s1=s.split(" ");
+        
+        for(String i:s1){
+            if(i.equals(found)){
+                count++;
+            }
+        }
+        
+        System.out.println(count);
+        
+        
+    }
+    
+}
