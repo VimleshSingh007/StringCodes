@@ -1,0 +1,17 @@
+public class reverse_string_word {
+    public static void main(String[] args) {   
+
+    String s="hello friends where are you going ";
+    
+    String[] s1=s.split(" ");
+    String reverse="";
+    
+    for(String i:s1){
+    
+    reverse=i+" " +reverse;
+    
+    }
+        System.out.println("reverse string is :-  "+ reverse);
+    
+}
+}
