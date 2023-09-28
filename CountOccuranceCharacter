@@ -1,0 +1,31 @@
+import java.util.*;
+public class count_occurance {
+    public static void main(String[] args) {
+        
+    
+    String s1="samar aman ravi hello &&& hello shyam samar hello";
+    String s=s1.replaceAll("[^a-zA-Z0-9]", " ");
+    
+    
+    String arr[]=s.split(" ");
+
+    
+    Map<String,Integer> map= new HashMap<>();
+    
+    for(String word:arr){
+        
+        Integer integer=map.get(word);
+        System.out.println(integer);
+        
+        if(integer==null){
+
+            map.put(word, 1);
+        }
+        else{
+            map.put(word, integer+1);
+        }
+    }
+        System.out.println(map);
+            }
+    
+}
